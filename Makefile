@@ -4,7 +4,11 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 SRCS = main.c \
-       utils/stack_utils.c
+       utils/stack_utils.c \
+       parsing/parse_args.c \
+       parsing/validate_args.c \
+       operations/swap.c \
+       operations/push.c
 
 OBJS = $(SRCS:.c=.o)
 
